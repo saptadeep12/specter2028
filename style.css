@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+}
+
+.scene {
+position: relative;
+width: 100%;
+aspect-ratio: 16 / 9;
+overflow: hidden;
+}
+
+.background {
+width: 100%;
+height: 100%;
+object-fit: cover;
+image-rendering: pixelated;
+}
+
+#stars {
+position: absolute;
+inset: 0;
+
+width: 100%;
+height: 100%;
+
+image-rendering: pixelated;
+
+pointer-events: none;
+}
+
+canvas {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    image-rendering: pixelated;
+    pointer-events: none;
+}
+
+
